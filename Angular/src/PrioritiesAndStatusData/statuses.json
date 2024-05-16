@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Assigned"
+        },
+        {
+            "id": 2,
+            "name": "Completed"
+        },
+        {
+            "id": 3,
+            "name": "In Progress"
+        },
+        {
+            "id": 4,
+            "name": "Parked"
+        },
+        {
+            "id": 5,
+            "name": "Unassigned"
+        },
+        {
+            "id": 7,
+            "name": "DELETED"
+        },
+        {
+            "id": 8,
+            "name": "Requested"
+        },
+        {
+            "id": 9,
+            "name": "Awaiting Feedback"
+        },
+        {
+            "id": 10,
+            "name": "Oulook Meeting/Appointment"
+        }
+    ]
+}
