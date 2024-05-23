@@ -1,60 +1,90 @@
 {
     "data": [
         {
-            "id": 1024,
-            "startDate": "2019-01-12",
-            "endDate": "2019-01-12",
-            "duration": "15.0",
-            "name": "zsvzsd",
-            "manuallyScheduled": true
+            "id": 1,
+            "name": "BizExtend",
+            "manuallyScheduled": true,
+            "children": [
+                {
+                    "id": 998,
+                    "name": "sdfgsdg",
+                    "startDate": "2019-01-31",
+                    "endDate": "2019-01-31",
+                    "durationUnit": "hour",
+                    "duration": 3,
+                    "manuallyScheduled": true
+                }
+            ]
         },
         {
-            "id": 165279,
-            "startDate": "2019-04-01",
-            "endDate": "2019-05-17",
-            "duration": "10.0",
-            "name": "New Task",
-            "manuallyScheduled": true
-        },
-        {
-            "id": 165282,
-            "startDate": "2019-04-03",
-            "endDate": "2019-05-04",
-            "duration": "10.0",
-            "name": "Title for a new task",
-            "manuallyScheduled": true
-        },
-        {
-            "id": 165330,
-            "startDate": "2019-03-01",
-            "endDate": "2019-04-16",
-            "duration": "20.0",
-            "name": "Test for new task update",
-            "manuallyScheduled": true
-        },
-        {
-            "id": 165331,
-            "startDate": "2020-01-27",
-            "endDate": "2020-01-27",
-            "duration": "12.0",
-            "name": "New Task Created",
-            "manuallyScheduled": true
-        },
-        {
-            "id": 165333,
-            "startDate": "2019-01-01",
-            "endDate": "2022-01-28",
-            "duration": "14.0",
-            "name": "Task 1",
-            "manuallyScheduled": true
-        },
-        {
-            "id": 165334,
-            "startDate": "2019-02-01",
-            "endDate": "2020-02-01",
-            "duration": "18.0",
-            "name": "Task 12",
-            "manuallyScheduled": true
+            "id": 2,
+            "name": "Randgo",
+            "manuallyScheduled": true,
+            "children": [
+                {
+                    "id": 1024,
+                    "name": "zsvzsd",
+                    "startDate": "2019-01-12",
+                    "endDate": "2019-01-12",
+                    "durationUnit": "hour",
+                    "duration": 15,
+                    "manuallyScheduled": true
+                },
+                {
+                    "id": 165279,
+                    "name": "New Task",
+                    "startDate": "2019-04-01",
+                    "endDate": "2019-05-17",
+                    "durationUnit": "hour",
+                    "duration": 10,
+                    "manuallyScheduled": true
+                },
+                {
+                    "id": 165282,
+                    "name": "Title for a new task",
+                    "startDate": "2019-04-03",
+                    "endDate": "2019-05-04",
+                    "durationUnit": "hour",
+                    "duration": 10,
+                    "manuallyScheduled": true
+                },
+                {
+                    "id": 165330,
+                    "name": "Test for new task update",
+                    "startDate": "2019-03-01",
+                    "endDate": "2019-04-16",
+                    "durationUnit": "hour",
+                    "duration": 20,
+                    "manuallyScheduled": true
+                },
+                {
+                    "id": 165331,
+                    "name": "New Task Created",
+                    "startDate": "2020-01-27",
+                    "endDate": "2020-01-27",
+                    "durationUnit": "hour",
+                    "duration": 12,
+                    "manuallyScheduled": true
+                },
+                {
+                    "id": 165333,
+                    "name": "Task 1",
+                    "startDate": "2019-01-01",
+                    "endDate": "2022-01-28",
+                    "durationUnit": "hour",
+                    "duration": 14,
+                    "manuallyScheduled": true
+                },
+                {
+                    "id": 165334,
+                    "name": "Task 12",
+                    "startDate": "2019-02-01",
+                    "endDate": "2020-02-01",
+                    "durationUnit": "hour",
+                    "duration": 18,
+                    "manuallyScheduled": true
+                }
+            ]
         }
     ]
 }

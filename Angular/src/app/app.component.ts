@@ -36,9 +36,9 @@
 
 
 import { AfterViewInit, Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { ResourceUtilization } from '@bryntum/gantt';
-import { BryntumResourceUtilizationComponent } from '@bryntum/gantt-angular';
-import { projectModelConfig, resourceUtilizationConfig } from './app.config';
+import { Column, Gantt, Model, ResourceUtilization } from '@bryntum/gantt';
+import { BryntumGanttComponent, BryntumResourceUtilizationComponent } from '@bryntum/gantt-angular';
+import { ganttConfig, projectModelConfig, resourceUtilizationConfig } from './app.config';
 
 @Component({
     selector: 'app-root',
@@ -48,14 +48,25 @@ import { projectModelConfig, resourceUtilizationConfig } from './app.config';
 })
 export class AppComponent implements AfterViewInit {
     public projectModelConfig = projectModelConfig;
+    public ganttConfig = ganttConfig;
     public resourceUtilizationConfig = resourceUtilizationConfig;
 
+    private gantt!: Gantt;
     private resourceUtilization!: ResourceUtilization;
 
+    @ViewChild('gantt') ganttComponent!: BryntumGanttComponent;
     @ViewChild('resourceUtilization') resourceUtilizationComponent!: BryntumResourceUtilizationComponent;
 
+    onBeforeCellEditStart({ editorContext }: { editorContext: { column: Column; record: Model } }): boolean {
+        return editorContext.column.field !== 'percentDone' || editorContext.record.isLeaf;
+    }
+
     ngAfterViewInit(): void {
-        // Save instance of resource utilization
+        // save instances (not used in this demo)
+        this.gantt = this.ganttComponent.instance;
         this.resourceUtilization = this.resourceUtilizationComponent.instance;
+
+        // make resource utilization a partner of gantt
+        this.resourceUtilization.addPartner(this.gantt);
     }
 }

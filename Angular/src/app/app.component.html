@@ -33,21 +33,28 @@
 
 <bryntum-gantt-project-model
     #project
+    [calendar]="projectModelConfig.calendar!"
     [taskStore]="projectModelConfig.taskStore!"
     [resourceStore]="projectModelConfig.resourceStore!"
     [assignmentStore]="projectModelConfig.assignmentStore!"
-    [startDate]="projectModelConfig.startDate!"
-    [endDate]="projectModelConfig.endDate!"
-    [calendar]="projectModelConfig.calendar!"
 ></bryntum-gantt-project-model>
+<bryntum-gantt
+    #gantt
+    [project]="project"
+    [flex]="ganttConfig.flex!"
+    [labelsFeature]="ganttConfig.features!.labels!"
+    [viewPreset]="ganttConfig.viewPreset!"
+    [columnLines]="ganttConfig.columnLines!"
+    [columns]="ganttConfig.columns!"
+    [subGridConfigs]="ganttConfig.subGridConfigs!"
+    (onBeforeCellEditStart)="onBeforeCellEditStart($event)"
+></bryntum-gantt>
+<bryntum-splitter></bryntum-splitter>
 <bryntum-resource-utilization
     #resourceUtilization
     [project]="project"
-    [startDate]="resourceUtilizationConfig.startDate!"
-    [endDate]="resourceUtilizationConfig.endDate!"
     [flex]="resourceUtilizationConfig.flex!"
     [rowHeight]="resourceUtilizationConfig.rowHeight!"
     [showBarTip]="resourceUtilizationConfig.showBarTip!"
     [columns]="resourceUtilizationConfig.columns!"
-    [bbar]="resourceUtilizationConfig.bbar!"
 ></bryntum-resource-utilization>
